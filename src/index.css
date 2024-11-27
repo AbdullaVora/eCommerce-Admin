@@ -2,8 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #071739;
+
+* {
+  font-family: ;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.primary-bg {
+  color: #071739 !important;
+}
+
+.secondary-bg {
+  color: #112143 !important;
+}
+
+/* .blur-effect {
+  backdrop-filter: blur(8px) !important;
+  -webkit-filter: blur(8px);
+} */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: #112143;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #112143;
+  cursor: pointer;
 }
 
 /* :root {
