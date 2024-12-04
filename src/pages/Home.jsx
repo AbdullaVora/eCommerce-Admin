@@ -13,10 +13,10 @@ import avatar from "../assets/avatar/avatar.png"
 
 const Home = () => {
 
-    const icons = [{ icon: <BsCurrencyDollar size={32} />, icon2: <FaArrowTrendUp size={25} />, title: "Total Revenue", color: 'bg-green-600', color2: 'text-green-500' },
-    { icon: <FiShoppingBag size={32} />, icon2: <FaArrowTrendDown size={25} />, title: "Total Sales", color: 'bg-orange-700', color2: 'text-red-500' },
-    { icon: <IoFileTrayStackedOutline size={32} />, icon2: <FaArrowTrendUp size={25} />, title: "Orders Paid", color: 'bg-slate-300', color2: 'text-green-500' },
-    { icon: <FaUsers size={32} />, icon2: <FaArrowTrendUp size={25} />, title: "Total Users", color: 'bg-blue-700', color2: 'text-green-500' }]
+    const icons = [{ icon: <BsCurrencyDollar size={28} />, icon2: <FaArrowTrendUp size={25} />, title: "Total Revenue", color: 'bg-green-600', color2: 'text-green-500' },
+    { icon: <FiShoppingBag size={28} />, icon2: <FaArrowTrendDown size={25} />, title: "Total Sales", color: 'bg-orange-700', color2: 'text-red-500' },
+    { icon: <IoFileTrayStackedOutline size={28} />, icon2: <FaArrowTrendUp size={25} />, title: "Orders Paid", color: 'bg-slate-300', color2: 'text-green-500' },
+    { icon: <FaUsers size={28} />, icon2: <FaArrowTrendUp size={25} />, title: "Total Users", color: 'bg-blue-700', color2: 'text-green-500' }]
 
     const [dateRange, setDateRange] = useState({
         fromDate: new Date().toISOString().split('T')[0],
@@ -40,11 +40,11 @@ const Home = () => {
     };
 
     return (
-        <div className="bg-primary-bg w-[calc(100%-250px)] ms-auto h-screen">
-            <Header />
-            <Aside />
+        <div className="custom-container">
+            {/* <Header />
+            <Aside /> */}
 
-            <div className="main-home mt-[55px] p-4">
+            <div className="main-home p-4">
                 <div className="top-title w-full bg-secondary-bg p-3 flex justify-between items-center rounded-md">
                     <h1 className="text-white text-[20px] font-semibold">E-Commerce Dashboard</h1>
                     <div className="date flex gap-4">
@@ -128,29 +128,40 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="orders bg-secondary-bg mt-4 rounded-md py-2 relative max-h-[400px] overflow-hidden">
+                <div className="orders bg-secondary-bg mt-4 rounded-md relative py-2">
                     {/* Fixed Header */}
                     <h3 className="text-white font-medium px-4 pb-3 pt-2 border-b-[1px] border-dashed border-[rgba(255,255,255,0.3)] z-10 w-full bg-secondary-bg sticky top-0">
                         Recent Orders
                     </h3>
 
-                    {/* Table Content */}
-                    <div className="table-container w-full overflow-x-auto">
-                        <table className="w-full text-left border-collapse">
-                            <thead>
-                                <tr className="bg-primary-bg text-white">
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Order ID</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Customer</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Order Date</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Payment Method</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Delivery Date</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Total Amount</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Status</th>
-                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Action</th>
+                    {/* Table Wrapper */}
+                    <div className="max-h-[400px] overflow-y-auto">
+                        <table className="table-auto w-full text-left border-collapse">
+                            <thead className="bg-primary-bg sticky top-0 z-10">
+                                <tr>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Order ID</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Customer</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Order Date</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Payment Method</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Delivery Date</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Total Amount</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Status</th>
+                                    <th className="py-3 px-4 text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center text-white">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {/* Rows will go here */}
+                                {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((order, index) => (
+                                    <tr key={index}>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">881254</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Bradley</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">01-06-24</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Cash</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">06-06-24</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">$12.06</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Paid</td>
+                                        <td className="py-3 px-4 text-white text-[14px] border-b border-[rgba(255,255,255,0.1)] text-center">Paid</td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>

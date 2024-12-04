@@ -7,7 +7,7 @@ const ReportBox = ({ icon, icon2, title, color, color2 }) => {
     const isDown = icon2.type === FaArrowTrendDown;
 
     return (
-        <div className=" rounded-md bg-secondary-bg mt-5 py-5 w-[25%] border-t-[1px] border-t-[#0d99ff] flex items-center justify-around">
+        <div className=" rounded-md bg-secondary-bg mt-5 py-4 w-[25%] border-t-[1px] border-t-[#0d99ff] flex items-center justify-around">
             <div className={`icon p-2 rounded-xl ${color}`}>
                 {icon}
             </div>
@@ -16,8 +16,8 @@ const ReportBox = ({ icon, icon2, title, color, color2 }) => {
                 <span className={`${isDown ? 'text-red-500' : 'text-green-500'} block text-[16px]`}>68%</span>
             </div>
             <div className="amount">
-                <span className="text-white text-[22px] text-end block font-semibold">$33,200</span>
-                <span className="text-white block font-bold text-[18px]">{title}</span>
+                <span className="text-white text-[18px] text-end block font-semibold">$33,200</span>
+                <span className="text-white block font-bold text-[16px]">{title}</span>
             </div>
         </div>
     );
