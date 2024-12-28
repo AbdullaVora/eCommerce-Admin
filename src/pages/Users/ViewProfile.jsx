@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Profile from '../../components/profile/Profile'
+import Profile from '../../components/Profile/Profile'
 
 const ViewProfile = () => {
     return (

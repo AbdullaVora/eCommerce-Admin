@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ProductsTable from '../components/allproducts/ProductsTable';
+import ProductsTable from '../components/Allproducts/ProductsTable';
 import { Link } from 'react-router-dom';
 
 const Orders = () => {

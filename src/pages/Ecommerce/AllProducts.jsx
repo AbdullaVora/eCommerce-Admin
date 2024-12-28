@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import ProductsTable from '../../components/allproducts/ProductsTable'
+import ProductsTable from '../../components/Allproducts/ProductsTable'
 
 const AllProducts = () => {
     const [isviewProduct, setViewProduct] = useState(true);
