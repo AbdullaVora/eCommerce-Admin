@@ -1,5 +1,3 @@
-import Aside from "../components/aside/aside"
-import Header from "../components/header/Header"
 import { useState, useEffect } from 'react'
 import ReportBox from "../components/home/ReportBox";
 import { FiShoppingBag } from "react-icons/fi";

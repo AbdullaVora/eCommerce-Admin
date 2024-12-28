@@ -15,9 +15,9 @@ const Header = () => {
                     <div className="bar">
                         <FaBarsStaggered size={22} className="text-white cursor-pointer" />
                     </div>
-                    <div className="visit ms-5 bg-tertiary-bg hover:bg-primary-bg cursor-pointer  p-2 rounded-lg flex items-center gap-2">
+                    <div className="visit ms-5 bg-tertiary-bg hover:bg-primary-bg cursor-pointer p-2     rounded-lg flex items-center gap-2">
                         <CgMediaLive size={22} className="text-white cursor-pointer" />
-                        <a href="https://furn-store-xi.vercel.app" target="_blank"><span className="text-white text-[16px] font-semibold">Visit Website</span></a>
+                        <a href="https://furn-store-xi.vercel.app" target="_blank"><span className="text-white text-[14px] font-semibold">Visit Website</span></a>
                     </div>
                 </div>
                 <div className="left flex items-center">
