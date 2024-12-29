@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ProductsTable from '../../components/Allproducts/ProductsTable'
+import ProductsTable from '../../components/ProductsTable'
 
 const AllUsers = () => {
 

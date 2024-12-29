@@ -1,5 +1,5 @@
 import React from 'react'
-import AddUerForm from '../../components/AddUser/AddUerForm'
+import AddUerForm from '../../components/AddUerForm'
 import { Link } from 'react-router-dom'
 
 const AddUser = () => {

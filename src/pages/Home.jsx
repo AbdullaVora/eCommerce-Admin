@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import ReportBox from "../components/Home/ReportBox";
+import ReportBox from "../components/ReportBox";
 import { FiShoppingBag } from "react-icons/fi";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { FaArrowTrendUp, FaArrowTrendDown } from "react-icons/fa6";
 import { IoFileTrayStackedOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
-import SimpleLineChart from "../components/Home/Chart";
+import SimpleLineChart from "../components/Chart";
 import avatar from "../assets/avatar/avatar.png"
 
 
