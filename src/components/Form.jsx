@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { database } from "../firebase/firebase"
-import { doc, collection, getDoc, addDoc } from "firebase/firestore"
+// import { database } from "../firebase/firebase"
+// import { doc, collection, getDoc, addDoc } from "firebase/firestore"
 import { useDispatch } from "react-redux"
 import { toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
