@@ -3,7 +3,7 @@ import axios from 'axios';
 // Set up the default base URL for our API
 
 const apiInstance = axios.create({
-    baseURL: 'http://localhost:3000/api'
+    baseURL: 'https://fur-store-api.vercel.app/api'
 })
 
 export default apiInstance;
