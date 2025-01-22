@@ -8,7 +8,7 @@ const initialState = {
 export const addProduct = createAsyncThunk('product/addProduct', async (input, { rejectWithValue }) => {
     try {
         console.log(input);
-        const { data } = await apiInstance.post('/product/addProduct', input);
+        const { data } = await apiInstance.post('/api/product/addProduct', input);
         return data;
     } catch (error) {
         return rejectWithValue(error.message);
