@@ -67,7 +67,7 @@ const Form = () => {
     };
     return (
         <div className='p-5 mt-4 rounded-md bg-secondary-bg'>
-            <form onSubmit={(e) => handleSubmit(e)}>
+            <form action='' onSubmit={(e) => handleSubmit(e)}>
                 <div className="flex justify-between">
                     <div className="w-[50%] pe-5">
                         <label className='block text-white font-semibold'>Product Title</label>
