@@ -63,10 +63,10 @@ const Aside = () => {
               className={`overflow-hidden transition-all duration-300 ease-in-out ${isEcommerceOpen ? "max-h-40" : "max-h-0"
                 }`}
             >
-              <Link to="/ecommerce/addProduct"><li className="cursor-pointer flex items-center justify-center py-2 px-3 font-semibold text-white hover:bg-primary-bg">
+              <Link to="/product/addProduct"><li className="cursor-pointer flex items-center justify-center py-2 px-3 font-semibold text-white hover:bg-primary-bg">
                 <RiFileAddLine size={18} className="me-2 " /> Add Product
               </li></Link>
-              <Link to='/ecommerce/allproducts'><li className="cursor-pointer py-2 px-3 font-semibold flex justify-center items-center text-white hover:bg-primary-bg">
+              <Link to='/product/allproducts'><li className="cursor-pointer py-2 px-3 font-semibold flex justify-center items-center text-white hover:bg-primary-bg">
                 <AiOutlineProduct size={18} className="me-2" /> All Products
               </li></Link>
             </ul>
